@@ -1,0 +1,28 @@
+.table-columns-ul-container {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.employee-column {
+  width: 190px;
+  list-style: none;
+  padding-left: 0px;
+  border: solid 1px #e2e8f0;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.employee-column-entry-notes {
+  width: 300px;
+  list-style: none;
+  padding-left: 0px;
+  border: solid 1px #e2e8f0;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.employees-data-main-container {
+  display: flex;
+}
