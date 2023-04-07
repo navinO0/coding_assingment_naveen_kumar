@@ -52,14 +52,15 @@ const PieChartEmployeeData = () => {
       const differenceMinutes = endMinutes - startTimeMins
       const difference = endTime - startTime
       const totalMinutes = difference * 60 + differenceMinutes
-      const getFinalHours = Math.floor(totalMinutes / 60)
-      const getFinalMinutes = Math.floor(totalMinutes % 60)
 
-      const parsedHours = parseFloat(`${getFinalHours}.${getFinalMinutes}`)
-      totalTime += parsedHours
+      totalTime += totalMinutes
     })
+    const getFinalHours = Math.floor(totalTime / 60)
+    const getFinalMinutes = Math.floor(totalTime % 60)
+
+    const parsedHours = parseFloat(`${getFinalHours}.${getFinalMinutes}`)
     totalTime = totalTime.toFixed(2)
-    return {...eachOne, totalHours: totalTime}
+    return {...eachOne, totalHours: parsedHours}
   })
 
   return (
